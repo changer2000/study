@@ -1,0 +1,5 @@
+dn: o=sevenSeas
+o: sevenSeas
+objectClass: top
+objectClass: organization
+description: The context entry for suffix o=sevenSeas

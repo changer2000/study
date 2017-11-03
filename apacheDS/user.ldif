@@ -1,0 +1,6 @@
+dn: cn=Kate Bush,ou=users,ou=system
+objectclass: person
+objectclass: top
+sn: Bush
+cn: Kate Bush
+userpassword: bush

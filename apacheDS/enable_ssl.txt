@@ -1,0 +1,6 @@
+keytool -genkey -keyalg "RSA" -dname "cn=devlixichun" -alias devlixichun -keystore c:\devlixichun.ks -storepass secret -validity 3650
+
+keytool -list -keystore c:\devlixichun.ks
+
+
+d:\ApacheDS\bin\wrapper.exe -s d:\ApacheDS\instances\default\conf\wrapper-instance.conf set.INSTANCE_DIRECTORY=d:\ApacheDS\instances\default set.INSTANCE=defau

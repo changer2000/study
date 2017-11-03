@@ -1,0 +1,29 @@
+dn: cn=sevenSeasAuthorizationRequirementsACISubentry+subtreeSpecification={},o=sevenSeas
+changetype: add
+objectclass: top
+objectclass: subentry
+objectclass: accessControlSubentry
+cn: sevenSeasAuthorizationRequirementsACISubentry
+subtreeSpecification: {}
+prescriptiveACI: {
+    identificationTag "directoryManagerFullAccessACI",
+    precedence 11,
+    authenticationLevel simple,
+    itemOrUserFirst userFirst:
+    {
+        userClasses
+        {
+            name { "cn=Horatio Nelson,ou=people,o=sevenSeas" }
+        },
+        userPermissions
+        { 
+            {
+                protectedItems
+                {
+                    entry, allUserAttributeTypesAndValues
+                },
+                grantsAndDenials {grantReturnDN, grantImport, grantCompare, grantModify, grantExport, grantRead, grantDiscloseOnError, grantRemove, grantRename, grantBrowse, grantAdd, grantInvoke, grantFilterMatch } 
+            }
+        }
+    } 
+}
